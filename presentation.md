@@ -19,6 +19,18 @@
 
 !
 
+## Test code
+
+```python
+def fib(n):
+  a, b = 0, 1
+  for i in xrange(n):
+    a, b = b, a + b
+  return b
+```
+
+!
+
 ## Page transition effect
 
 - 'e','f' key combination to enable fade effect at changing slide.
