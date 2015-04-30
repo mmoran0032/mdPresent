@@ -11,7 +11,7 @@ except:
 
 def launch():
   time.sleep(1)
-  webbrowser.open("http://localhost:8000/Presenter.html")
+  webbrowser.open("http://localhost:8000/PresenterFiles/Presenter.html")
 
 thread.start_new_thread(launch, ())
 
