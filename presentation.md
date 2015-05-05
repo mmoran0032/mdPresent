@@ -1,3 +1,5 @@
+![](./Images/gitLogo.png)
+
 ## Welcome to **Markdown Presenter**!
 
 - Update "presentation.md" by any text editor which you prefer.
