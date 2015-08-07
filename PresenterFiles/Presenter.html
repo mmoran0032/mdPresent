@@ -2,8 +2,80 @@
 <head>
 <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1" />
 <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-<link href="style.css" rel="stylesheet" type="text/css">
 <title>Markdown Presenter</title>
+<style>
+  html, body {
+  	margin: 0;
+  	border: 0;
+  	padding: 0;
+    font-family: 'Abel', helvetica, sans-serif;
+    color: #003300;
+    overflow: hidden;
+  }
+  div.centered {
+  	margin: auto;
+    font-size: 40px;
+  	width: 20em;
+  }
+  .slideCount {
+    position: fixed;
+    bottom: 1em;
+    right: 2px;
+    height: 1.5em;
+    width: 8em;
+    overflow: hidden;
+  }
+  .slideProgress {
+    background-color: green;
+    width: 100%;
+    min-height: 10px;
+  }
+  .slideCount select {
+    color: #555555;
+    border: none;
+    font-size: 1em;
+    height: 1.3em;
+    width: 10em;
+  }
+  .padding {
+    height: 60px;
+  }
+
+  body,
+  .content-holder {
+    background: #DDDDDD;
+  }
+  code {
+    color: #000000;
+  }
+  .for-print .content-holder {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+  }
+  .for-print .content-holder.template { display: none; }
+  @media screen {
+    .for-print { display: none; }
+  }
+  @media print {
+    .for-screen { display: none; }
+  }
+  @media only screen and (max-width: 768px) {
+    .centered {
+      zoom: 0.65;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .centered {
+      zoom: 0.5;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .centered {
+      zoom: 0.35;
+    }
+  }
+</style>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 <script>
 if (!window.jQuery) {
@@ -32,7 +104,7 @@ if (!window.jQuery) {
 </div>
 
   <div class="padding">
-    <!-- This padding need to hiding address bar automatically at iPhone/iPad/Android browser. -->
+    <!-- needed to hide address bar automatically for iPhone/iPad/Android -->
   </div>
 
 </div>

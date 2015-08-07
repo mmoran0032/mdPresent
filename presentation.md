@@ -63,6 +63,10 @@ $ git clone REPONAME
 
 !
 
+![](./Images/terminal1.png)
+
+!
+
 ## Setting up git
 
 Git will ask you for information, or you can manually create a `.gitconfig` file
@@ -75,7 +79,7 @@ Git will ask you for information, or you can manually create a `.gitconfig` file
 [url "https://nslgit.phys.nd.edu/"]
   insteadOf = nsl:
 [url "git@nslgit.phys.nd.edu:"]
-  insteadOf = gitnsl:
+  insteadOf = nslssh:
 ```
 
 !
@@ -98,11 +102,19 @@ Create a `.gitignore` in your repo
 
 ```
 git clone nsl:netID/repo
-git clone gitnsl:netID/repo
+git clone nslssh:netID/repo
 ```
 
 Will create empty repository named `repo` on your computer and `netID/repo` on NSL's git server
 
+
+!
+
+## Getting it to the Server
+
+`git push nsl:netID/repo master`
+
+![](./Images/server.png)
 
 !
 
