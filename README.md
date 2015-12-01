@@ -13,9 +13,12 @@ will need to reload (F5) the presentation tab to show the changes.
 See the current `presentation.md` file for information on how to format your
 slides, include images, etc. Markdown guides are also available online.
 
+
 How it works
 ------------
+
 The `Presenter.html` fetches the `presentation.md` from the server via Ajax,
 uses [Showdown.js](https://github.com/coreyti/showdown) to transform it into
 HTML, splits it on `<p>!</p>` into individual slides, and displays the
 current slide.
+
