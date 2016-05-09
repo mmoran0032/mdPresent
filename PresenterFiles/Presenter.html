@@ -27,6 +27,12 @@ if (!window.jQuery) {
 </tr>
 </table>
 
+<div class="slideCount">
+  <!-- <select tabindex="-1">
+  </select> -->
+  <!-- <div class="slideProgress"></div> -->
+</div>
+
   <div class="padding">
     <!-- needed to hide address bar automatically for iPhone/iPad/Android -->
   </div>
@@ -108,6 +114,16 @@ Present.buildPrintPage = function () {
             .removeClass('template');
         $('.centered', holder).html(slide);
     });
+}
+
+Present.buildSlideCounter = function () {
+    var $counter = $('.slideCount select');
+    var optionHtmls = [];
+    var numOfSlides = this.slides.length;
+    $.each(this.slides, function (i) {
+        optionHtmls.push('<option value="' + i + '">' + (i + 1) + '/' + numOfSlides + '</option>');
+    });
+    $counter.html(optionHtmls.join(''));
 }
 
 Present.reload = function() {
